@@ -3,53 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Bio</title>
+    <title>Team Red Panda</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
 </head>
 <body>
 
 <header>
-    <h1>Meet Our Team</h1>
-    <!-- Example team logo -->
+    <h1>Team Red Panda</h1>
     <img src="img/team-logo.png" alt="Team Logo" class="team-logo">
 
-    <!-- Navigation menu to switch between sections -->
+    <!-- Navigation menu -->
     <nav>
         <button onclick="showSection('bios')">Team Bios</button>
         <button onclick="showSection('vision')">Team Vision</button>
     </nav>
 </header>
 
-<!-- Team bios section (default section) -->
+<!-- Team bios section -->
 <div id="bios" class="container">
-    <!-- Each card represents an individual team member -->
+    <!-- Sia's Bio -->
     <div class="card">
-        <h2>John Doe</h2>
-        <p>Frontend Developer</p>
-        <button onclick="toggleBio('bio1')">Show Bio</button>
-        <p id="bio1" class="bio">John is a skilled frontend developer with 5 years of experience in creating responsive web applications.</p>
+        <h2>Sia Padole</h2>
+        <p>Computer Science + Finance Student</p>
+        <button onclick="toggleBio('bio-sia')">Show Bio</button>
+        <p id="bio-sia" class="bio">
+            Sia is passionate about AI, backend development, and building useful things with FastAPI.
+            She’s also a fan of clean code, pink aesthetics, and cat memes.
+            <br><br>
+            🌐 <a href="https://github.com/siap2102" target="_blank">GitHub Profile</a> |
+            📘 <a href="https://fastapi.tiangolo.com/" target="_blank">FastAPI Docs</a>
+            <br><br>
+            <img src="https://i.imgur.com/P7qYTcF.jpeg" width="100" alt="meme 1">
+            <img src="https://i.imgur.com/Thugcat.png" width="100" alt="cat meme">
+        </p>
     </div>
-    <div class="card">
-        <h2>Jane Smith</h2>
-        <p>Backend Developer</p>
-        <button onclick="toggleBio('bio2')">Show Bio</button>
-        <p id="bio2" class="bio">Jane is a backend developer specializing in server-side logic and database management.</p>
-    </div>
-    <div class="card">
-        <h2>Emily Johnson</h2>
-        <p>UI/UX Designer</p>
-        <button onclick="toggleBio('bio3')">Show Bio</button>
-        <p id="bio3" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
-    </div>
+
+    <!-- Teammates will paste their bios below -->
 </div>
 
-<!-- Team vision/mission statement section (hidden by default) -->
+<!-- Mission Statement -->
 <div id="vision" class="container" style="display: none;">
     <h2>Our Mission Statement</h2>
-    <p>We strive to create a collaborative, inclusive, and innovative environment where team members feel empowered to push boundaries and achieve excellence in their craft. Our mission is to deliver high-quality solutions that meet and exceed our clients' expectations.</p>
+    <p>
+        At Team Red Panda, we believe in building cool, clean, and creative tech that solves real problems.
+        We embrace collaboration, curiosity, and caffeine to drive our work as future engineers.
+        Our mission is to learn fearlessly, code responsibly, and help each other grow —
+        just like red pandas: small, smart, and unstoppable.
+    </p>
 </div>
 
 <script src="script.js"></script> <!-- Link to external JavaScript file -->
 
 </body>
 </html>
+
