@@ -1,90 +1,160 @@
+/* ====================================== */
+/* ====== Team Red Panda - Styles ======= */
+/* ====================================== */
+
 /* General page styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(to bottom, #ffffff 0%, #f4f4f4 100%);
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
 /* Header section styling */
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+    background: linear-gradient(to bottom, #333333, #555555);
+    color: #ffffff;
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* Styling for team logo image */
+/* Team logo styling */
 .team-logo {
-    width: 150px; /* Adjust the size as needed */
-    margin-top: 10px;
+    width: 120px;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-/* Menu button styling */
+/* Navigation button styling */
 header nav {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 header nav button {
-    background: #007BFF;
-    color: white;
+    background: #ffffff;
+    color: #EB2A32;
+    font-weight: bold;
     border: none;
     padding: 10px 15px;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
     margin: 0 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 header nav button:hover {
-    background: #0056b3;
+    background: #EB2A32;
+    color: #ffffff;
+    transform: translateY(-2px);
 }
 
-/* Flex container for team bios and vision sections */
+/* Container for bios and vision sections */
 .container {
-    width: 80%;
+    width: 85%;
+    max-width: 1200px;
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-/* Card styling for individual team bios */
+/* Styling for individual team bio cards */
 .card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
     margin: 10px;
     padding: 20px;
-    flex: 1 1 calc(30% - 40px);
+    flex: 1 1 calc(45% - 20px); /* 2 cards per row for clean spacing */
     text-align: center;
-    transition: transform 0.2s;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-h2 {
+.card h2 {
     margin: 0 0 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-/* Initially hide bio details */
+/* Initially hidden bio details */
 .bio {
     display: none;
     margin-top: 10px;
     color: #555;
 }
 
-/* Button styling */
-button {
-    background: #007BFF;
+/* General Button styling within cards (e.g., "Show Bio") */
+.card button {
+    background: #EB2A32;
     color: white;
     border: none;
     padding: 10px 15px;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
-button:hover {
-    background: #0056b3;
+.card button:hover {
+    background: #7E1A1D;
+    transform: translateY(-2px);
 }
+
+/* Avatar/profile image styling */
+.bio-pic {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 15px auto;
+}
+
+/* Moodboard image styling */
+.mood-img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    border-radius: 6px;
+    margin: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Moodboard layout container */
+.moodboard {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Mission Statement (Vision) Section Styling */
+#vision {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    width: 80%;
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: center;
+    line-height: 1.6;
+}
+
+#vision h2 {
+    color: #7E1A1D;
+    border-bottom: 3px solid #EB2A32;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* ====================================== */
+/* ========== End of Custom CSS ========= */
+/* ====================================== */
